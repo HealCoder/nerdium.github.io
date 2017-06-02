@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF8/">
+<title>Nerdium</title>
+<style>
+    
+h1 {
+    color: white;
+    position: centered;
+    left: 50px;
+    top: -10px;
+    z-index: -1;
+}
+body {
+    background-image: url("http://wallpaperscraft.ru/image/forma_monohrom_polosy_74891_1920x1200.jpg");
+}
+
+<body>  
+<h1>Nerdium</h1>
+    
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+ 
+</script> 
+    
+    
+</body>
+</html>
